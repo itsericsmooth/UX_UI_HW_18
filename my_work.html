@@ -10,7 +10,7 @@
     </head>
 
 <body>
-    <header>
+    <header class="inlineBlock">
             <div>
                 <img src="images/logo.png" alt="eric smith"> 
             
@@ -27,24 +27,42 @@
     <section class="myWork">
         <h1>My Work</h1>
         <div class="workGrid">
-            <div id="a">
-                <img src = "images/desktop_icon.png">
+            <div class="gridBox" id="a">
+                <img src = "images/edu.png"
+                style="width:400px">
             </div>
-            <div id="b">
-                <h4>Something</h4>
-                <p>My work</p>
-                <button>view project</button>
+            <div class="gridBox" id="b">
+                <h4>Dept of Education Redesign</h4>
+                <p>This was an exercise in practicing responsive design, using a government website (not know for their particular UI prowess) as a jumping off point to create a more user-friendly mobile and desktop prototype.</p>
+                <button id="view">view project</button>
             </div>
-            <div id="c">
-                <img src="images/desktop_icon.png">
+            <div class="gridbox" id="e"></div>
+            <div class="gridBox" id="c">
+                <img src="images/vyt.png"
+                style="width: 400px;">
             </div>
-            <div id="d">
-                <h4>Something</h4>
-                <p>My work</p>
-                <button>view project</button>
+            <div class="gridBox" id="d">
+                <h4>VYT Redesign</h4>
+                <p>In this prototype, I worked with a team to update the design of a local theatre. We found room for improvement in terms of usability and visual appeal and did our work based on that. 
+                </p>
+                <button id="view">view project</button>
             </div>
             <h3>View all projects</h3>
         </div>
     </section>
+    <footer class = "inlineBlock">
+        <ul class = "fontAwesome">
+            <li><i class="fas fa-envelope"></i></li>
+            <li><i class="fab fa-linkedin"></i></li>
+            <li><i class="fab fa-github"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="fab fa-instagram"></i></li>
+            <li><i class="fab fa-spotify"></i></li>
+        </ul>
+        <div class="inlineBlock">
+        <i class="fas fa-copyright"></i>
+        <p>Eric Smith 2021</p>
+    </div>
+</footer>
 </body>
 </html>

@@ -6,8 +6,13 @@
     border: 1px solid red;
 }*/
 
+/*section {
+    border: 1px solid red;
+}*/
+
 header {
     background-color: #E3D6C3;
+    width: 100%;
 }
 
 body {
@@ -19,15 +24,18 @@ p {
     font-weight: 100;
     color: black;
     background-color: white;
+    padding: 8px;
     
 }
 
 .row {
     display: flex;
+    flex-direction: row;
   }
   
   .column {
-    flex: 50%;
+    width: 50%;
+    border: 1px solid blue;
   }
 
 .inlineBlock {
@@ -37,7 +45,7 @@ p {
 
 .logo {
     width: 23%;
-    padding: 1%;
+    padding: 3%;
     text-align: center;
 }
 
@@ -81,8 +89,12 @@ button:hover {
     background-color: #B36957;
 }
 
+#view {
+    background-color: #69B399;
+}
+
 nav {
-    width: 73%;
+    width: 50%;
     padding: 1%;
 }
 
@@ -103,8 +115,9 @@ li {
     padding: 25px;
 }
 
-.content {
-    width: 500px;
+#info {
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
 }
 
@@ -120,23 +133,27 @@ i {
 
 .flexContainer {
     display: flex;
-    background-color: purple;
     flex-direction: row;
 }
 
 .flexDiv {
     width: 30%;
-    background-color: purple;
     margin: 15px;
     padding: 15px;
 }
 
 .workGrid {
     display: grid;
-    grid-template-rows: 300px 300px 300px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px 300px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
-    "a b c";
+    "a b" 
+    "e e"
+    "c d";
+}
+
+.gridBox {
+    margin: 50px;
 }
 
 #a {
@@ -154,13 +171,20 @@ i {
 #d {
     grid-area: d;
 }
+#e{
+    grid-area: e;
+    width: 100%;
+}
 
 @media only screen and (max-width: 600) {
     .flexContainer {
-    flex-direction: column;
+        display: flex;
+        flex-direction: column;
     }
     .flexDiv {
     width: 100%;
+    margin: 15px;
+    padding: 15px;
     }
     .workGrid {
         grid-template-rows: 300px 300px 300px 300px;
@@ -168,6 +192,7 @@ i {
         grid-template-areas: 
         "a"
         "b"
+        "e"
         "c"
         "d";
     }
